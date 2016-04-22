@@ -20,7 +20,8 @@ class choose_rest():
             sys.exit()
 
 if __name__=='__main__':
-    my_choices=['Italian','Indian','Chinese','Thai']
-    my_rest=choose_rest()
-    ch=my_rest.get_rest(my_choices)
+    my_choices=['Italian','Indian','Chinese','Thai']    #A list of places to choose from
+    my_rest=choose_rest()   #Cretae a class object
+    ch=my_rest.get_rest(my_choices)     #Call the function with input list as argument
     print 'Congrats! You are going to have {} today.'.format(ch)
+    
