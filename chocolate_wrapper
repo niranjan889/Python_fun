@@ -1,0 +1,16 @@
+
+import sys
+
+t = int(raw_input().strip())    #Get total number of lines to read
+for a0 in xrange(t):
+    tot=0
+    n,c,m = raw_input().strip().split(' ')
+    n,c,m = [int(n),int(c),int(m)]
+    m1 = n/c
+    tot+=m1
+    m11 = m1
+    while m11 >= m:
+        m2 = m11/m
+        tot+=m2
+        m11= (m11%m) + m2
+    print tot
