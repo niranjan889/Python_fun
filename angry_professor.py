@@ -22,7 +22,7 @@ for a0 in xrange(t):
     n,k = [int(n),int(k)]
     a = map(int,raw_input().strip().split(' '))
     p_cnt=0     #To count total present students
-    for a_i in a:
+    for a_i in a:   #One by one check arrival time of each student
         if a_i <=0:
             p_cnt+=1
             
