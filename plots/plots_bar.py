@@ -85,7 +85,7 @@ def bar_plot2(data_x,data_y1,data_y2,data_y3,data_y4):
     
     plt.subplots_adjust(bottom = 0.1,top = 0.95,wspace = 0.2,hspace = 0.3 )
     plt.show()
-#     plt.savefig('path/to/destination',orientation='portrait',bbox_inches='tight',dpi=300)
+    plt.savefig('path/to/destination',orientation='portrait',bbox_inches='tight',dpi=300)
  
 def bar_plot1(data_x, data_y1, data_y2, data_y3, data_y4):
     font = {'family' : 'Serif',
