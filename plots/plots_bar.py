@@ -15,7 +15,7 @@ def bar_plot2(data_x,data_y1,data_y2,data_y3,data_y4):
         'size'   : 16}
     rc('font', **font)
     
-    c1='#000000'
+    c1='#000000'    #set color of the bar in the plot
     
     #To plot
     fig = plt.figure(num=1,figsize=(14,8))
