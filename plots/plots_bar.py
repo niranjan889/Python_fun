@@ -128,8 +128,7 @@ def bar_plot1(data_x, data_y1, data_y2, data_y3, data_y4):
 #     plt.savefig('path/to/destination',orientation='portrait',bbox_inches='tight',dpi=300)
     
 if __name__=='__main__':
-    data_x='names for each group of plots. e.g., P@10'
-    data_x=['p@2','p@5','p@10','p@20']
+    data_x=['p@2','p@5','p@10','p@20'] # 'names for each group of plots.'
     data_y1=[0.5,0.6,0.75]  
     data_y2=[0.4,0.66,0.7]
     data_y3=[0.23,0.5,0.61]
