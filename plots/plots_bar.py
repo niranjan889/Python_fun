@@ -19,9 +19,7 @@ def bar_plot2(data_x,data_y1,data_y2,data_y3,data_y4):
     
     #To plot
     fig = plt.figure(num=1,figsize=(14,8))
-    
     ax = fig.add_subplot(221)
-    
     list_vals=np.array(data_y1)
             
     N = len(list_vals)      
@@ -37,7 +35,6 @@ def bar_plot2(data_x,data_y1,data_y2,data_y3,data_y4):
 
     #2nd plot
     ay = fig.add_subplot(222)
-    
     list_vals=np.array(data_y2)
     
     N = len(list_vals)      
@@ -54,7 +51,6 @@ def bar_plot2(data_x,data_y1,data_y2,data_y3,data_y4):
     
     #3rd plot
     ay = fig.add_subplot(223)
-    
     list_vals=np.array(data_y3)
     
     N = len(list_vals)      
@@ -70,7 +66,6 @@ def bar_plot2(data_x,data_y1,data_y2,data_y3,data_y4):
     
     #4th plot
     ay = fig.add_subplot(224)
-    
     list_vals=np.array(data_y4)
     
     N = len(list_vals)      
