@@ -3,7 +3,7 @@ event occurs, one can call this function and send a custom message to specified 
 
 import smtplib
 
-def Send_Email(msg):
+def send_email(msg):
 
     FROMADDR = "xyz@abc.com"
     # provide your login id 
