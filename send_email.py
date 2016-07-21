@@ -6,11 +6,11 @@ import smtplib
 def Send_Email(msg):
 
     FROMADDR = "xyz@abc.com"
-    # provide your login  
+    # provide your login id 
     LOGIN    = "xyz@abc.com"
     # provide your password 
     PASSWORD = "" 
-    TOADDRS  = ["xyz@abc.com"] 
+    TOADDRS  = ["xyz@abc.com","abc@abc.com"] 
     SUBJECT  = msg 
     msg = ("From: %s\r\nTo: %s\r\nSubject: %s\r\n\r\n" 
     % (FROMADDR, ", ".join(TOADDRS), SUBJECT) ) 
