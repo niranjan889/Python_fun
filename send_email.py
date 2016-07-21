@@ -1,3 +1,6 @@
+'''This function can be used as an email notifier or a trigger. Whenever a certain 
+event occurs, one can call this function and send a custom message to specified email id. '''
+
 import smtplib
 
 def Send_Email(msg):
