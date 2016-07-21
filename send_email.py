@@ -24,5 +24,4 @@ def Send_Email(msg):
     server.quit()
     
 if __name__ == '__main__':
-    
     Send_Email('Program Terminated With Error code XXX')
