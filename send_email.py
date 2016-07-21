@@ -5,12 +5,12 @@ import smtplib
 
 def send_email(msg):
 
-    FROMADDR = "xyz@abc.com"
+    FROMADDR = "xyz@gmail.com"
     # provide your login id 
-    LOGIN    = "xyz@abc.com"
+    LOGIN    = "xyz@gmail.com"
     # provide your password 
     PASSWORD = "" 
-    TOADDRS  = ["xyz@abc.com","abc@abc.com"] 
+    TOADDRS  = ["xyz@gmail.com","abc@gmail.com"] 
     SUBJECT  = msg 
     msg = ("From: %s\r\nTo: %s\r\nSubject: %s\r\n\r\n" 
     % (FROMADDR, ", ".join(TOADDRS), SUBJECT) ) 
