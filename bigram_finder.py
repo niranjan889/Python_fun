@@ -9,8 +9,8 @@ from nltk.tokenize import word_tokenize
 
 text = "this is a foo bar bar black sheep  foo bar bar black sheep foo bar bar black  sheep shep bar bar black sentence"
 
-trigram_measures = nltk.collocations.BigramAssocMeasures()
+bigram_measures = nltk.collocations.BigramAssocMeasures()
 finder = BigramCollocationFinder.from_words(word_tokenize(text))
 
-for i in finder.score_ngrams(trigram_measures.pmi):
+for i in finder.score_ngrams(bigram_measures.pmi):
     print i
