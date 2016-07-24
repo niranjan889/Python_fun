@@ -1,0 +1,16 @@
+'''
+Created on Jul 24, 2016
+
+@author: hadoop
+'''
+import nltk
+from nltk.collocations import *
+from nltk.tokenize import word_tokenize
+
+text = "this is a foo bar bar black sheep  foo bar bar black sheep foo bar bar black  sheep shep bar bar black sentence"
+
+trigram_measures = nltk.collocations.BigramAssocMeasures()
+finder = BigramCollocationFinder.from_words(word_tokenize(text))
+
+for i in finder.score_ngrams(trigram_measures.pmi):
+    print i
