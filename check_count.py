@@ -23,6 +23,7 @@ def count():
     to_combs = sorted(dict_v_chk.items(), key=operator.itemgetter(1),reverse=False)
     cnt=100
     dict_new={}
+    #Take last 100 tuples
     for tup in to_combs[-100:]:
         dict_new[cnt]=tup[0]
         cnt-=1
