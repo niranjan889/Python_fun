@@ -15,3 +15,5 @@ finder.apply_freq_filter(2) #To filter less frequently occurring bi-grams
 
 for i in finder.score_ngrams(bigram_measures.pmi):
     print i
+#To just get top N bigrams based on score
+nbest = finder.nbest(bigram_measures.pmi, 5)
