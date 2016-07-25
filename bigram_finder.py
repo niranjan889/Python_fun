@@ -11,6 +11,7 @@ text = "this is a foo bar bar black sheep  foo bar bar black sheep foo bar bar b
 
 bigram_measures = nltk.collocations.BigramAssocMeasures()
 finder = BigramCollocationFinder.from_words(word_tokenize(text))
+finder.apply_freq_filter(2) #To filter less frequently occurring bi-grams
 
 for i in finder.score_ngrams(bigram_measures.pmi):
     print i
