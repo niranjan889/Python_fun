@@ -11,6 +11,7 @@ filename='newyork'
 def count():
     cnt=0
     dict_v_chk={}
+    #path of the input and utput files
     path=path='/home/anand/Documents/Niranjan/4Sqaure/Collaborator/'
     with open(path+filename+'_venues.csv','r') as fp:
         reader=csv.reader(fp)
