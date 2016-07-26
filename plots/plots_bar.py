@@ -28,8 +28,8 @@ def bar_plot2(data_x,data_y1,data_y2,data_y3,data_y4):
     b=ax.bar(ind, list_vals, width, color=c1)
     
     # add some text for labels, title and axes ticks
-#     ax.set_ylabel('Y axis label',fontsize=18)
-#     ax.set_xlabel('a). Model 1',fontsize=18)
+    ax.set_ylabel('Y axis label',fontsize=18)
+    ax.set_xlabel('a). Model 1',fontsize=18)
     ax.set_xticks(ind+width/2)
     ax.set_xticklabels(data_x)
 
@@ -44,8 +44,8 @@ def bar_plot2(data_x,data_y1,data_y2,data_y3,data_y4):
     
 #     ay.set_ylim(0,0.6)
     # add some text for labels, title and axes ticks
-#     ay.set_ylabel('',fontsize=18)
-#     ay.set_xlabel('b). Moscow',fontsize=18)
+    ay.set_ylabel('',fontsize=18)
+    ay.set_xlabel('b). Moscow',fontsize=18)
     ay.set_xticks(ind+width/2)
     ay.set_xticklabels(data_x)
     
@@ -59,8 +59,8 @@ def bar_plot2(data_x,data_y1,data_y2,data_y3,data_y4):
     b=ay.bar(ind, list_vals, width, color=c1)
     
     # add some text for labels, title and axes ticks
-#     ay.set_ylabel('',fontsize=18)
-#     ay.set_xlabel('c). Chicago',fontsize=18)
+    ay.set_ylabel('',fontsize=18)
+    ay.set_xlabel('c). Chicago',fontsize=18)
     ay.set_xticks(ind+width/2)
     ay.set_xticklabels(data_x)
     
@@ -74,8 +74,8 @@ def bar_plot2(data_x,data_y1,data_y2,data_y3,data_y4):
     b=ay.bar(ind, list_vals, width, color=c1)
     
     # add some text for labels, title and axes ticks
-#     ay.set_ylabel('',fontsize=18)
-#     ay.set_xlabel('d). Los Angeles',fontsize=18)
+    ay.set_ylabel('',fontsize=18)
+    ay.set_xlabel('d). Los Angeles',fontsize=18)
     ay.set_xticks(ind+width/2)
     ay.set_xticklabels(data_x)
     
