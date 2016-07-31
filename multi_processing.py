@@ -28,14 +28,13 @@ def incr(cmn_ven):
 if __name__ == '__main__':
     num_proc=4
     list1=[(1,2)]*3     #list1, l11, l22 are concatenated to form a single input list 
-#     l11=[(2,3)]*50
+    # l11=[(2,3)]*50
     l11=[]
     l12=[(1,2,3)]*3
     dict_cnt=dict()
     dict_com=dict()
     list1+=l11+l12
     list2=copy.deepcopy(list1)
-#     f_res=[]
     
     #Create processes 
     pool = mp.Pool(processes=num_proc)
