@@ -7,7 +7,6 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import numpy as np
 from mayavi import mlab
-
 import random
 
 def draw_graph3d(graph, graph_colormap='winter', bgcolor = (1, 1, 1),
@@ -16,7 +15,6 @@ def draw_graph3d(graph, graph_colormap='winter', bgcolor = (1, 1, 1),
                  text_size=0.008, text_color=(0, 0, 0)):
 
     H=nx.Graph()
-
     # add edges
     for node, edges in graph.items():
         for edge, val in edges.items():
