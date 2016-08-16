@@ -41,8 +41,8 @@ def draw_graph3d(graph, graph_colormap='winter', bgcolor = (1, 1, 1),
                         resolution=20)
 
     for i, (x, y, z) in enumerate(xyz):
-        label = mlab.text(x, y, str(i), z=z,
-                          width=text_size, name=str(i), color=text_color)
+        label = mlab.text(x, y, str(i), z=z, width=text_size, 
+                          name=str(i), color=text_color)
         label.property.shadow = True
 
     pts.mlab_source.dataset.lines = np.array(G.edges())
