@@ -3,11 +3,11 @@ Created on 2015-09-03
 
 @author: Niranjan
 '''
-import networkx as nx
-import matplotlib.pyplot as plt
-import numpy as np
-from mayavi import mlab
 import random
+import numpy as np
+import networkx as nx
+from mayavi import mlab
+import matplotlib.pyplot as plt
 
 def draw_graph3d(graph, graph_colormap='winter', bgcolor = (1, 1, 1),
                  node_size=0.03,
