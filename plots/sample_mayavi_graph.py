@@ -13,7 +13,6 @@ def draw_graph3d(graph, graph_colormap='winter', bgcolor = (1, 1, 1),
                  node_size=0.03,
                  edge_color=(0.8, 0.8, 0.8), edge_size=0.002,
                  text_size=0.008, text_color=(0, 0, 0)):
-
     H=nx.Graph()
     # add edges
     for node, edges in graph.items():
@@ -22,9 +21,7 @@ def draw_graph3d(graph, graph_colormap='winter', bgcolor = (1, 1, 1),
                 H.add_edge(node, edge)
 
     G=nx.convert_node_labels_to_integers(H)
-
     graph_pos=nx.spring_layout(G, dim=3)
-
     # numpy array of x,y,z positions in sorted node order
     xyz=np.array([graph_pos[v] for v in sorted(G)])
 
@@ -48,7 +45,6 @@ def draw_graph3d(graph, graph_colormap='winter', bgcolor = (1, 1, 1),
     pts.mlab_source.dataset.lines = np.array(G.edges())
     tube = mlab.pipeline.tube(pts, tube_radius=edge_size)
     mlab.pipeline.surface(tube, color=edge_color)
-
     mlab.show() # interactive window
 
 # create tangled hypercube
@@ -59,9 +55,7 @@ def make_graph(nodes):
         graph[i2][i1] = 1
 
     n = len(nodes)
-
     if n == 1: return {nodes[0]:{}}
-
     nodes1 = nodes[0:n/2]
     nodes2 = nodes[n/2:]
     G1 = make_graph(nodes1)
