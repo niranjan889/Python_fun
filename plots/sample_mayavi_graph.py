@@ -72,7 +72,8 @@ def make_graph(nodes):
 
     return G
 
-# graph example
-nodes = range(16)
-graph = make_graph(nodes)
-draw_graph3d(graph)
+if __name__ == '__main__':
+  # graph example
+  nodes = range(16)
+  graph = make_graph(nodes)
+  draw_graph3d(graph)
