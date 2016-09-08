@@ -21,5 +21,5 @@ def read_data():
         print cat['name']
 
 if __name__=='__main__':
-#     fetch_data()
+    fetch_data()
     read_data()
