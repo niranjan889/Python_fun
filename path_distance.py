@@ -46,4 +46,5 @@ class path_distance():
 if __name__== '__main__':
     obj = path_distance()
     obj.path = os.getcwd()+'/data'
+    #This function traverses through the data and writes the distance between coordinates to a new file
     obj.traverse()
