@@ -19,6 +19,7 @@ class path_distance():
         #Open a file to write the outputs to
         with open(self.path+'/Path_output.csv','w') as fp2:
             writer=csv.writer(fp2)
+            writer.writerow(['Total Distance'])
             #Open the file to read the data
             with open(self.path+'/Path distance.csv','r') as fp:
                 reader=csv.reader(fp)
